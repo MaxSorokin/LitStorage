@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="14dp" >
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/save_changes"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <EditText
+                android:id="@+id/object_name"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true"
+                android:ems="10"
+                android:hint="Название объекта"
+                android:inputType="textPersonName"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <Spinner
+                android:id="@+id/location"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/object_name"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/room"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/location"
+                android:ems="10"
+                android:hint="Номер аудитории"
+                android:inputType= "number"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/type"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/room"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/subtype"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/type"
+                android:minHeight="48dp" />
+            <EditText
+                android:id="@+id/manufacturer"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/subtype"
+                android:ems="10"
+                android:hint="Производитель"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/model"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/manufacturer"
+                android:ems="10"
+                android:hint="Модель"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/inventory_number"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/model"
+                android:ems="10"
+                android:hint="Инвентарный номер"
+                android:inputType= "number"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/serial_number"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/inventory_number"
+                android:ems="10"
+                android:hint="Серийный номер"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/datePicker"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/serial_number"
+                android:layout_marginTop="10dp"
+                android:hint=" Дата актуализации"
+                />
+            <EditText
+                android:id="@+id/comment"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/datePicker"
+                android:ems="10"
+                android:hint="Комментарий"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <EditText
+                android:id="@+id/mac_adress"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/comment"
+                android:ems="10"
+                android:hint="MAC-адрес"
+                android:maxHeight="48dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <Spinner
+                android:id="@+id/presence_in_list"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/mac_adress"
+                android:minHeight="48dp" />
+            <Spinner
+                android:id="@+id/discrepancy"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_below="@id/presence_in_list"
+                android:minHeight="48dp" />
+            <!--<EditText
+                android:id="@+id/comment"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/room"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="Комментарий"
+                android:inputType="textMultiLine"
+                android:minHeight="70dp"
+                android:textColor="#000000"
+                android:textSize="14sp" />-->
+        </RelativeLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@id/save_changes"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/background_dark"
+        android:maxHeight="48dp"
+        android:text="Сохранить"
+        android:textColor="#FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

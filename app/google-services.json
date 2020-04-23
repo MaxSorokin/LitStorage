@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "766369600818",
+    "firebase_url": "https://litstorage-8fc06.firebaseio.com",
+    "project_id": "litstorage-8fc06",
+    "storage_bucket": "litstorage-8fc06.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:766369600818:android:43ab2728f0c284cf81332b",
+        "android_client_info": {
+          "package_name": "com.example.litstorage"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "766369600818-93nfsjjsslgd4ibtk9t9jh0k2hvvglei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.litstorage",
+            "certificate_hash": "1441ccc8305c1811d2e03158ec231d65c9cdeb25"
+          }
+        },
+        {
+          "client_id": "766369600818-44l0lq61n512eif8s7nuck3fbahc51u8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwgaEXGGRTGHmw-Rf-mMSXijSy6UwBqF0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "766369600818-44l0lq61n512eif8s7nuck3fbahc51u8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
